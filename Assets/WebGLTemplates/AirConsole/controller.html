@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
+    <script type="text/javascript">
+    var air_console = new AirConsole();
+    AirConsole.setActivePlayers(1);
+
+    var screenWidth = document.documentElement.clientWidth;
+    var screenHeight = document.documentElement.clientHeight;
+    console.log(screenHeight + ", " + screenWidth)
+    
+    </script>
+</head>
+
+<body id="canvas">
+
+    <style>
+   
+    </style>
+<button class="btn" onclick="Score()"> click me</button>
+
+
+<script>
+function Score()
+{
+    var message = {
+        "Jump": true
+    }
+    air_console.message(AirConsole.SCREEN,message);
+    
+}
+
+
+</script>
+</body>
+</html>
